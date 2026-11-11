@@ -25,7 +25,7 @@ const filteredProjects = projectsData.filter((project) => {
 })
 
     return (
-    <>
+    <section id="projects" className="scroll-mt-28">
         <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
             My Projects
         </h2>
@@ -36,7 +36,7 @@ const filteredProjects = projectsData.filter((project) => {
         </div>
         <div>{projectsData.map((project) =><ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} tags={project} gitUrl={project.gitUrl} previewUrl={project.previewUrl}/>)}
         </div>
-    </>
+    </section>
   )
 }
 

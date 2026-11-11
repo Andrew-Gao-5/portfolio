@@ -26,8 +26,9 @@ const TAB_DATA =[
             <ul className="list-disc pl-2">
                 <li>University of Texas A&M, College Station</li>
                 <li>Computer Science with minor in Cybersecurity</li>
-                <li>COULD MAKE A TABLE OF ALL CLASSES IN THE FUTURE MAYBE</li>
-                <li>Codepath</li>
+                <li> Discrete Structures for Computing, Linear Algebra, Data Structures and 
+Algorithms, Program Design and Concepts </li>
+                <li>Codepath CYB 102</li>
 
 
             </ul>
@@ -61,10 +62,10 @@ const AboutSection = () => {
     }
   return <section className="text-white">
     <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image src="/images/about-image.png" alt="Andrew with his dog" width={1200} height={1161} sizes="(max-width: 768px) 100vw, 50vw" className="h-auto w-full max-w-[500px]" />
     <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
         <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-        <p className="text-base md:text-lg">(fill this in later )</p>
+        <p className="text-base md:text-lg">I'm currently a sophomore in Computer Science here at Texas A & M University. I'm also persuing a minor in Cybersecurity and have experience with investigating simulated security incidents using Splunk and packet captures.</p>
     <div className="flex flex-row justify-start mt-8">
         <TabButton selectTab={() => handleTabChange("skills")} active={tab == "skills"}>
             {" "}Skills{" "}
